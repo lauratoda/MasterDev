@@ -1,0 +1,14 @@
+@mixin button {
+    box-shadow: -5px 0px #92f7f2 ;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    
+}
+
+@mixin fondo ($w, $h){
+    width: $w;
+    height: $h;
+    background-color: $turquesa;
+}

@@ -1,0 +1,134 @@
+@import "./_variables";
+@import "./_mixin.scss";
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    // border:1px solid red;    
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    display:flex;
+    padding:20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        h1{
+            font-weight: 700;
+            font-size: 30px;
+        }
+    
+        ul{
+            display: flex;
+            list-style: none;
+        }
+            li{
+                font-size: 14px;
+                font-weight: bold;
+                padding-right: 35px; 
+            }
+}
+
+main{
+    
+    section.primera{
+        display: flex;
+
+        div.fondo{
+            position: absolute;
+            left:70px;
+            top: 140px;
+            @include fondo(210px, 50px);
+            z-index: -2;
+        }
+
+        div.principal{            
+            width: 50%;
+            padding: 70px 70px;            
+        }
+            img{
+                width: 100%;
+            }
+            h2{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 55px;
+                line-height: 70px;
+                letter-spacing:10px;
+                width: 75%;
+            }
+            p{
+                color: #8b8b8b;
+                font-size: 18px;
+                line-height: 30px;
+                padding: 30px 0px;
+            }
+            button{
+                background-color:  #03faee;
+                border: 0.5px solid #8b8b8b;
+                border-radius: 10px;
+                padding: 15px 25px;
+                margin-right: 20px;
+            }
+    }        
+    section.segunda{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 70px;
+            article{
+                background-color: #f8f8f8;
+                padding: 35px 20px;
+                width: 30%; 
+                span{
+                    @include button;
+                    font-size: 20px;
+                    border: 0.5px solid  #8b8b8b;
+                    padding: 10px 15px;  
+                    margin: 10px;     
+                }      
+                h6 {
+                    font-size: 20px;
+                    margin: 20px 10px 10px;
+                }     
+                p{
+                    line-height: 20px;
+                    margin: 10px;
+                
+                }
+        }
+    }
+            
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+    div{
+        display: flex;
+        align-items: center;
+        i{
+            padding: 5px;                     
+        }
+       
+        button{
+        // @include button;
+        padding: 15px;
+        margin: 15px;
+        border: 0.5px solid #8b8b8b;
+        background-color: white;
+        box-shadow: -5px 0px #92f7f2 ;
+        border-radius: 50%;
+        }
+        
+        a{
+            color: black;            
+        }
+    }
+    }
+
+
+
+
